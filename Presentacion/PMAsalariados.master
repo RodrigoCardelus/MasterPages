@@ -1,0 +1,72 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="PMAsalariados.master.cs" Inherits="PMAsalariados" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table style="width: 70%;">
+            <tr>
+                <td align="center" colspan="3">
+                    <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="26pt" 
+                        Text="Acceso ASALARIADOS"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    <asp:Label ID="lblDatos" runat="server"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <asp:LinkButton ID="LinkButton1" runat="server" 
+                        PostBackUrl="~/frmMostrarSueldo.aspx">Mostrar sueldo</asp:LinkButton>
+                </td>
+                <td align="center">
+                    <asp:LinkButton ID="LinkButton2" runat="server" 
+                        PostBackUrl="~/frmVerLicencia.aspx">Ver licencias</asp:LinkButton>
+                </td>
+                <td align="right">
+                    <asp:Button ID="btnSalir" runat="server" Font-Bold="True" 
+                        onclick="btnSalir_Click" Text="Salir" Width="100px" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td colspan="3">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+        </table>
+        <br />
+    </div>
+    </form>
+</body>
+</html>

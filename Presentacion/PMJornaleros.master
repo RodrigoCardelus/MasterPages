@@ -1,0 +1,83 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="PMJornaleros.master.cs" Inherits="PMJornaleros" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <table align="center" style="width: 70%;">
+            <tr>
+                <td align="center" colspan="3">
+                    <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Size="26pt" 
+                        Text="Acceso a JORNALEROS"></asp:Label>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td align="right">
+                    <asp:Image ID="Image1" runat="server" ImageUrl="~/Imagenes/Koala.jpg" 
+                        Width="150px" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:LinkButton ID="LinkButton1" runat="server" 
+                        PostBackUrl="~/frmCargarHoras.aspx">Cargar Horas</asp:LinkButton>
+                </td>
+                <td colspan="2" rowspan="5">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:LinkButton ID="LinkButton2" runat="server" 
+                        PostBackUrl="~/frmElegirTarea.aspx">Elegir Tarea</asp:LinkButton>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <asp:Button ID="btnSalir" runat="server" Font-Bold="True" 
+                        onclick="btnSalir_Click" Text="Salir" Width="100px" />
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;</td>
+            </tr>
+            <tr>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+                <td>
+                    &nbsp;</td>
+            </tr>
+        </table>
+        <br />
+    </div>
+    </form>
+</body>
+</html>
